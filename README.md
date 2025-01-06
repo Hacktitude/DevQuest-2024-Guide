@@ -176,7 +176,7 @@ Note: We also have provided you with some challenges related to the features of 
 
 Have fun!
 
-You can now try out the [Challenge 0](./readme-files/challenge00.md) for the test run. 
+You can now try out the [Challenge 0](./challenge00.md) for the test run. 
 
 
 ### Key Directories and Files
