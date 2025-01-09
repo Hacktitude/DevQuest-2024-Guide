@@ -4,7 +4,7 @@
 You need to change the title of the `landing page of the application(client/welcome.html)` to "ReelHub".
 
 <p align="center">
-    <img src="./assets/challenge00-a-1.png" width="450px"/>
+    <img src="./images/challenge00-a-1.png" width="450px"/>
 </p>
 <p align="center">
     <img src="./assets/challenge00-a-2.png" width="450px"/>
