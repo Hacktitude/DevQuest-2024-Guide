@@ -30,6 +30,12 @@ _Recommended: To ensure seamless management of multiple Node.js versions on your
 
 We recommend that you use [Visual Studio Code](https://code.visualstudio.com/download) and install the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension for a better developer experience.
 
+### Email Communication regarding Test Run Preparation and Execution
+
+You will first receive an invitation email regarding the test run. This email will be sent either on the day of the test run or beforehand. It will include a user guide, which we recommend reviewing carefully to familiarize yourself with the process. 
+
+At the scheduled time, you will receive another email notifying you that the test has started. This email will contain a link to access the test details. Please use the link to find the clone URL and the Git credentials to clone your repository. Note that each team will have a single repository assigned to them.
+
 ### Clone the project to your local computer
 
 The Git repository URL and credentials will be available at the start of the contest through a link.
