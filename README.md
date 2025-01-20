@@ -153,7 +153,7 @@ Use the below commands to run the tests. When you FIRST run, all the tests excep
 
 * To run a single test file of a challenge:
 
-  `npm test challenge0.test.js`
+  `npm test challenge01.test.js`
 
 As you complete the challenges, the respective test cases will be passed one by one. When you complete all the tasks of a challenge, all test cases of the respective challenge should pass. Every DevQuest challenge has a test case that you can run to validate the successful completion of the challenge.
 
