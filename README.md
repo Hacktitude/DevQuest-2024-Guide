@@ -28,13 +28,16 @@ _Recommended: To ensure seamless management of multiple Node.js versions on your
 
 <br>
 
+For macOS users, it is recommended to prepend `sudo` to the installation commands to ensure they have the required permissions.
+
+
 We recommend that you use [Visual Studio Code](https://code.visualstudio.com/download) and install the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension for a better developer experience.
 
-### Email Communication regarding Test Run Preparation and Execution
+### Email Communication regarding DevQuest Preparation and Execution
 
-You will first receive an invitation email regarding the test run. This email will be sent either on the day of the test run or beforehand. It will include a user guide, which we recommend reviewing carefully to familiarize yourself with the process. 
+You will first receive an invitation email regarding the final day. This email will be sent either on the day of the final hackathon or beforehand. It will include a user guide, which we recommend reviewing carefully to familiarize yourself with the process. 
 
-At the scheduled time, you will receive another email notifying you that the test has started. This email will contain a link to access the test details. Please use the link to find the clone URL and the Git credentials to clone your repository. Note that each team will have a single repository assigned to them.
+At the scheduled time, you will receive another email notifying you that the hackathon has started. This email will contain a link to access the hackathon details. Please use the link to find the clone URL and the Git credentials to clone your repository. Note that each team will have a single repository assigned to them.
 
 ### Clone the project to your local computer
 
@@ -52,6 +55,10 @@ Once you clone the project from your team's Git repository, run the following co
 
 * `npm install`
 
+### Rename env file
+
+The repository contains an environment configuration file. Please rename it to `.env` to follow standard conventions for environment variable management.
+
 ### Validate if the environment is correctly setup
 
 You can run the Sanity test file in the `tests` directory with the below command.
@@ -62,7 +69,6 @@ For Windows users,
 
 > _Note: If you get an error while running this command, make sure you have set all the prerequisites correctly on your machine._
 
-<!-- If you have the environment correctly set up, all the tests should pass in the sanity test. If the sanity test fails with an internal, that is an indication of your environment setup issue, you must first attend to rectifying your development environment. -->
 
 ### Setting up the development database
 
@@ -85,7 +91,7 @@ To start the server (without nodemon) use the following command:
 Click on the `index.html` file and click on the option **"Open with Live Server"** as shown in the screenshot below.
 
 <p align="center">
-  <img src="./images/live-server.png" width="350px">
+  <img src="./assets/live-server.png" width="350px">
 </p>
 
 ### Add .gitignore
@@ -98,9 +104,9 @@ config/node_modules
 .env
 .idea
 package-lock.json
-main.sqlite3
 .vscode
-junit.xml
+*.sqlite3
+*.xml
 ```
 
 > It is advised that one member of your team create the file, commit, and push the .gitignore file to the remote repository with the following commands.
@@ -149,9 +155,9 @@ Use the below commands to run the tests. When you FIRST run, all the tests excep
 
   `npm test challenge0.test.js`
 
-As you complete the challenges, the respective tests will be passed one by one. When you complete all the tasks of a challenge, all tests of the respective challenge should pass. Every DevQuest challenge has a test case that you can run to validate the successful completion of the challenge.
+As you complete the challenges, the respective test cases will be passed one by one. When you complete all the tasks of a challenge, all test cases of the respective challenge should pass. Every DevQuest challenge has a test case that you can run to validate the successful completion of the challenge.
 
-> _Note: Tests are not using the main.sqlite3 database. Every test creates an isolated in-memory database._
+> _Note: Test cases are not using the main.sqlite3 database. Every test case creates an isolated in-memory database._
 
 ### Legitimacy of your solution
 
@@ -167,12 +173,31 @@ This step is not mandatory to work on the DevQuest challenges, but it may improv
 * Install a plugin for **SQLite Viewer** on your IDE so that you are able to explore the SQLite database.
 
 <p align="center">
-  <img src="./images/Code_bQgIDTxJNp.png" width="500px">
+  <img src="./assets/SQLite Viewer.png" width="500px">
 </p>
 
 * Install any other plugin as necessary for you to improve your developer experience.
 
 ## Solving the challenges
+
+You can now try out the challenges. 
+
+| [Challenge 01](./challenge01.md) | [Challenge 02](./challenge02.md) | [Challenge 03](./challenge03.md) | [Challenge 04](./challenge04.md) |
+|--------------------------------|--------------------------------|--------------------------------|--------------------------------|
+|                                |                                |                                |                                |
+
+| [Challenge 05](./challenge05.md) | [Challenge 06](./challenge06.md) | [Challenge 07](./challenge07.md) | [Challenge 08](./challenge08.md) |
+|--------------------------------|--------------------------------|--------------------------------|--------------------------------|
+|                                |                                |                                |                                |
+
+| [Challenge 09](./challenge09.md) | [Challenge 10](./challenge10.md) | [Challenge 11](./challenge11.md) | [Challenge 12](./challenge12.md) |
+|--------------------------------|--------------------------------|--------------------------------|--------------------------------|
+|                                |                                |                                |                                |
+
+| [Challenge 13](./challenge13.md) | [Challenge 14](./challenge14.md) | [Challenge 15](./challenge15.md) | [Challenge 16](./challenge16.md) |
+|--------------------------------|--------------------------------|--------------------------------|--------------------------------|
+|                                |                                |                                |                                |
+
 
 If your sanity test passes and you are able to run the application, now you can proceed to the challenges. All the DevQuest challenges are documented in their own file. Please visit the links below, read them carefully, and get started solving them.
 
@@ -180,28 +205,15 @@ Although the challenges are independent from one another, it will be easier for 
 
 Note: We also have provided you with some challenges related to the features of the application that will not be evaluated for the competition.
 
-Have fun!
+Happy Coding !
 
-You can now try out the [Challenge 0](./challenge00.md) for the test run. 
-
-
-### Key Directories and Files
-
-- `client/`: Contains HTML files and assets for the client-side application.
-- `config/`: Contains configuration files and scripts.
-  - `buildspec.yml`: Build specification for the project.
-  - `replace_tests.js`: Script to replace test files.
-- `db/`: Contains database files.
-- `readme-files/`: Contains challenge descriptions and instructions.
-- `src/`: Contains the source code for the project.
-- `tests/`: Contains test files.
 
 ## Getting support
 
 There will be minimal to no support available on the context day. We are not in a position to clarify challenge descriptions on an individual basis. However, in case of a setting up the project need, you may contact the technical support team via a chat on WhatsApp (No support for technical doubts) to the phone number `+94 71 382 6109`.
 
-In case of **non-technical support** you may reach out to the DevQuest Support Contact No. `xxxxxxxxxx` via calls only.
+In case of **non-technical support** you may reach out to the DevQuest Support Contact No. `+94 70 233 4139` via calls only.
 
 ## References
 
-* <a href="https://DevQuest.lk/devquest/" target="_blank">DevQuest DevQuest Website</a>
+* <a href="https://codefest.lk/devquest-2024/" target="_blank">DevQuest Website</a>
