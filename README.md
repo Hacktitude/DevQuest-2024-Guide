@@ -137,7 +137,7 @@ The Movie Rental System is a web application that allows users to browse, rent, 
 - **Clustering**: The system uses k-means clustering to group users based on their rental patterns and provides insights into user behavior.
 
 
-You can use the following credentials to log in as an admin, and an already existing user in seed data. Navigate the application using the main menu.
+You can use the following credentials to log in as an admin, and an already existing user in seed data. Navigate the application using the main menu. Please avoid creating new users.
 
 ADMIN
 * Username: `mattD@gmail.com`
