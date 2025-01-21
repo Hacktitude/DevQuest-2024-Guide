@@ -46,6 +46,7 @@ If any of the above criteria are not met, an error message should be displayed t
   "message": "Password should be at least 8 characters long"
 }
 ```
+
 <p align="center">
   <img src="./assets/challenge01-a-1.png" width="400px"/>
 </p>
@@ -70,6 +71,7 @@ If any of the above criteria are not met, an error message should be displayed t
   "message": "Password must not be more than 25 characters long"
 }
 ```
+
 <p align="center">
   <img src="./assets/challenge01-a-2.png" width="400px"/>
 </p>
@@ -167,6 +169,7 @@ The goal is to enhance the security and user experience by showing a generic err
   "message": "Invalid email or password"
 }
 ```
+
 <p align="center">
   <img src="./assets/challenge01-b-1.png" width="300px">
 </p>
@@ -177,13 +180,12 @@ Currently system has a toggle password visibility button. However, the password 
 
 <p align="center">
   <img src="./assets/challenge01-c-1.png" width="300px">
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="./assets/challenge01-c-2.png" width="300px">
+  <p align="center"><b>Before clicking the eye icon</b></p>
+ 
 </p>
 <p align="center">
-  <b>Before clicking the eye icon</b>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <b>After clicking the eye icon</b>
+<img src="./assets/challenge01-c-2.png" width="300px">
+  <p align="center"><b>After clicking the eye icon</b></p>
 </p>
 
 This challenge should be implemented in the `client/login.html` file. The eye-icon is already provided in the file.
@@ -191,7 +193,6 @@ This challenge should be implemented in the `client/login.html` file. The eye-ic
 <p align="center">
   <img src="./assets/challenge01-c-3.png" width="400px">
 </p>
-
 
 You need to implement the following,
 
