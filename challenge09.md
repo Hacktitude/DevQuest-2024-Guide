@@ -139,7 +139,7 @@ In the movie page of the application, the user should be able to sort feedback b
 Use `GET /api/feedback/movie/sort/${movieId}/?option=${option}&order=${order}` to sort feedbacks. The `option` parameter can be either `time` or `rating`, while the `sort` parameter can be `asc` or `desc`.
 
 This can be divided into 4 sub-challenges:
-
+ 
 1. Sort from newest to oldest feedbacks
    **Request-**`GET /api/feedback/movie/sort/:movieId/time/desc`
    **Response for**`GET /api/feedback/movie/sort/6ba1472e-563c-4dbd-ad31-d78aec32f5af/time/desc`
@@ -222,9 +222,10 @@ This can be divided into 4 sub-challenges:
 
    ![alt text](assets/challenge09-c-4.png)
 
-3. Sort feedbacks from the highest rating to lowest rating
+  3. Sort feedbacks from the highest rating to lowest rating
    **Request-**`GET /api/feedback/movie/sort/:movieId/rating/desc`
    **Response for**`GET /api/feedback/movie/sort/ba1472e-563c-4dbd-ad31-d78aec32f5af/rating/desc`
+
 
    ```json
    {
@@ -263,7 +264,7 @@ This can be divided into 4 sub-challenges:
 
    ![alt text](assets/challenge09-c-2.png)
 
-4. Sort feedbacks from the lowest rating to highest rating
+  4. Sort feedbacks from the lowest rating to highest rating
    **Request-**`GET /api/feedback/movie/sort/:movieId/rating/asc`
    **Response for**`GET /api/feedback/movie/sort/ba1472e-563c-4dbd-ad31-d78aec32f5af/rating/asc`
 
