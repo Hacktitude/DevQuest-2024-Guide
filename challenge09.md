@@ -261,7 +261,7 @@ This can be divided into 4 sub-challenges:
    }
    ```
 
-   ![alt text](assets/challenge09-c-3.png)
+   ![alt text](assets/challenge09-c-2.png)
 
 4. Sort feedbacks from the lowest rating to highest rating
    **Request-**`GET /api/feedback/movie/sort/:movieId/rating/asc`
