@@ -4,9 +4,9 @@
 
 The challenge is based on retrieving and sorting feedbacks for a movie. It has 3 sub challenges:
 
-a. Get all feedback for a movie
-b. Show top 2 rated and bottom 2 rated feedbacks for a movie
-c. Sort feedbacks
+- Get all feedback for a movie
+- Show top 2 rated and bottom 2 rated feedbacks for a movie
+- Sort feedbacks
 
 ## a. get all feedback for a movie
 
