@@ -180,12 +180,6 @@ This step is not mandatory to work on the DevQuest challenges, but it may improv
 
 ## Solving the challenges
 
-You can now try out the challenges. 
-
-| [Challenge 01](./challenge01.md) | [Challenge 02](./challenge02.md) | [Challenge 03](./challenge03.md) | [Challenge 04](./challenge04.md) |
-|--------------------------------|--------------------------------|--------------------------------|--------------------------------|
-|                                |                                |                                |                                |
-
 You can now try out the challenges.
 
 | [Challenge 01](./challenge01.md) | [Challenge 02](./challenge02.md) | [Challenge 03](./challenge03.md) | [Challenge 04](./challenge04.md) |
