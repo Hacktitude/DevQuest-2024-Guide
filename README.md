@@ -194,8 +194,7 @@ Although the challenges are independent from one another, it will be easier for 
 
 Note: We also have provided you with some challenges related to the features of the application that will not be evaluated for the competition.
 
-Happy Coding !
-
+### Happy Coding !
 
 ## Getting support
 
