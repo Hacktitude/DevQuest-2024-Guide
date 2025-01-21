@@ -6,11 +6,12 @@ Challenge 1 is focused on authentication.
 
 **This challenge consists of three sub-challenges.**
 
-a. Password Validation
-b. Send an error message message if login credentials are incorrect
-c. Toggle password visibility
+- Password Validation
+- Send an error message message if login credentials are incorrect
+- Toggle password visibility
 
-## a. Show a meaningful messages for invalid password
+## a. Show meaningful messages for invalid password
+
 
 In the current application, when the user entered password is invalid, the system shows a generic error message. The challenge is to show a meaningful error message to the user when the password entered by the user is invalid.
 

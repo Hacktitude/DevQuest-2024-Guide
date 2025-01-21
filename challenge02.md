@@ -16,7 +16,7 @@ Invalid token
 ```
 ## Part b
 
-In this part, if a none admin user try to access any admin user API endpoint it should return the following response:
+In this part, if a non-admin user try to access any admin user API endpoint it should return the following response:
 
 ```text
 Access denied!

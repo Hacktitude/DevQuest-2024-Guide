@@ -9,7 +9,7 @@ The function should return a straightforward decimal value, like `3.7`.
 
 ## Part b
 
-The all movies are retrieved using `getMovies()` function in both the `movieController` and `movieRepository`.
+All of the movies are retrieved using `getMovies()` function in both the `movieController` and `movieRepository`.
 
 However, in the current application it doesn't calculate daily rental rate after applying the discount. You need to implement this functionality in the `getMovies()` function in the `movieRepository`.
 
