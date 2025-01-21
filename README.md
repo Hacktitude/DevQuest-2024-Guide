@@ -139,11 +139,11 @@ The Movie Rental System is a web application that allows users to browse, rent, 
 
 You can use the following credentials to log in as an admin, and an already existing user in seed data. Navigate the application using the main menu. Please avoid creating new users.
 
-### Admin Credentials
+#### Admin Credentials
 * Username: `mattD@gmail.com`
 * Password: `Test@123`
 
-### User Credentials
+#### User Credentials
 * Username: `tomB@gmail.com`
 * Password: `Test@123`
 
