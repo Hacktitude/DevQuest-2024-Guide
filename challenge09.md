@@ -22,7 +22,7 @@ However, there are some bugs in the current implementation:
 
 1. The `createdAt` attribute of each feedback object is in the format `YYYY-MM-DDTHH:MM:SS.MMMZ`. It should be converted to a "days ago" format.
 
-2. The `name` attribute of each feedback object is the `userId` of the user. It should be converted to the full name of the user.  
+2. The `name` attribute of each feedback object is the `userId` of the user. It should be converted to the full name of the user.
 
 You need to fix these bugs in the `modifyFeedbackResponse()` function in the `feedbackController`.
 
@@ -139,10 +139,11 @@ In the movie page of the application, the user should be able to sort feedback b
 Use `GET /api/feedback/movie/sort/${movieId}/?option=${option}&order=${order}` to sort feedbacks. The `option` parameter can be either `time` or `rating`, while the `sort` parameter can be `asc` or `desc`.
 
 This can be divided into 4 sub-challenges:
- 
-1. Sort from newest to oldest feedbacks
-   **Request-**`GET /api/feedback/movie/sort/:movieId/time/desc`
-   **Response for**`GET /api/feedback/movie/sort/6ba1472e-563c-4dbd-ad31-d78aec32f5af/time/desc`
+
+- Sort from newest to oldest feedbacks
+  **Request-**`GET /api/feedback/movie/sort/:movieId/time/desc`
+  **Response for**`GET /api/feedback/movie/sort/6ba1472e-563c-4dbd-ad31-d78aec32f5af/time/desc`
+
 
 ```json
 {
@@ -181,126 +182,125 @@ This can be divided into 4 sub-challenges:
 
 ![alt text](assets/challenge09-c-1.png)
 
-2. Sort from oldest to newest feedbacks
-   **Request-**`GET /api/feedback/movie/sort/:movieId/time/asc`
-   **Response for**`GET /api/feedback/movie/sort/ba1472e-563c-4dbd-ad31-d78aec32f5af/time/asc`
+- Sort from oldest to newest feedbacks
+  **Request-**`GET /api/feedback/movie/sort/:movieId/time/asc`
+  **Response for**`GET /api/feedback/movie/sort/ba1472e-563c-4dbd-ad31-d78aec32f5af/time/asc`
 
-   ```json
-   {
-     "data": [
-       {
-         "name": "Denzel Washington",
-         "userId": "4a90e4f3-d695-4c54-a698-099cdb39e4ad",
-         "rating": 1,
-         "comment": "Terrible movie! Did not like it at all! The plot was boring and the acting was terrible!",
-         "createdAt": "2024-03-07T04:30:00.000Z"
-       },
-       {
-         "name": "Ben Affleck",
-         "userId": "fce17e94-3415-4c08-b2c9-beddba191b4d",
-         "rating": 4,
-         "comment": "Interesting movie! The plot was intriguing and the acting was good! I would watch it again!",
-         "createdAt": "2024-03-08T04:30:00.000Z"
-       },
-       {
-         "name": "Tom Cruise",
-         "userId": "4fd09491-2299-4684-a4fb-d7ca0bb074eb",
-         "rating": 2,
-         "comment": "Terrible movie! Did not like it at all! The plot was boring and the acting was terrible! I would not watch it again!",
-         "createdAt": "2024-03-09T04:30:00.000Z"
-       },
-       {
-         "name": "Will Smith",
-         "userId": "999da33d-74c3-4176-bb26-98c53215a71c",
-         "rating": 5,
-         "comment": "Best movie ever! The plot was amazing and the acting was superb! I would watch it again and again!",
-         "createdAt": "2024-03-12T04:30:00.000Z"
-       }
-     ]
-   }
-   ```
+  ```json
+  {
+    "data": [
+      {
+        "name": "Denzel Washington",
+        "userId": "4a90e4f3-d695-4c54-a698-099cdb39e4ad",
+        "rating": 1,
+        "comment": "Terrible movie! Did not like it at all! The plot was boring and the acting was terrible!",
+        "createdAt": "2024-03-07T04:30:00.000Z"
+      },
+      {
+        "name": "Ben Affleck",
+        "userId": "fce17e94-3415-4c08-b2c9-beddba191b4d",
+        "rating": 4,
+        "comment": "Interesting movie! The plot was intriguing and the acting was good! I would watch it again!",
+        "createdAt": "2024-03-08T04:30:00.000Z"
+      },
+      {
+        "name": "Tom Cruise",
+        "userId": "4fd09491-2299-4684-a4fb-d7ca0bb074eb",
+        "rating": 2,
+        "comment": "Terrible movie! Did not like it at all! The plot was boring and the acting was terrible! I would not watch it again!",
+        "createdAt": "2024-03-09T04:30:00.000Z"
+      },
+      {
+        "name": "Will Smith",
+        "userId": "999da33d-74c3-4176-bb26-98c53215a71c",
+        "rating": 5,
+        "comment": "Best movie ever! The plot was amazing and the acting was superb! I would watch it again and again!",
+        "createdAt": "2024-03-12T04:30:00.000Z"
+      }
+    ]
+  }
+  ```
 
-   ![alt text](assets/challenge09-c-4.png)
+  ![alt text](assets/challenge09-c-4.png)
 
-  3. Sort feedbacks from the highest rating to lowest rating
-   **Request-**`GET /api/feedback/movie/sort/:movieId/rating/desc`
-   **Response for**`GET /api/feedback/movie/sort/ba1472e-563c-4dbd-ad31-d78aec32f5af/rating/desc`
+  - Sort feedbacks from the highest rating to lowest rating
+    **Request-**`GET /api/feedback/movie/sort/:movieId/rating/desc`
+    **Response for**`GET /api/feedback/movie/sort/ba1472e-563c-4dbd-ad31-d78aec32f5af/rating/desc`
 
+  ```json
+  {
+    "data": [
+      {
+        "name": "Will Smith",
+        "userId": "999da33d-74c3-4176-bb26-98c53215a71c",
+        "rating": 5,
+        "comment": "Best movie ever! The plot was amazing and the acting was superb! I would watch it again and again!",
+        "createdAt": "2024-03-12T04:30:00.000Z"
+      },
+      {
+        "name": "John Smith",
+        "userId": "c784dd78-b26e-4cc0-9c8a-b84bdb4330b9",
+        "rating": 5,
+        "comment": "Fun to watch",
+        "createdAt": "Today"
+      },
+      {
+        "name": "Ben Affleck",
+        "userId": "fce17e94-3415-4c08-b2c9-beddba191b4d",
+        "rating": 4,
+        "comment": "Interesting movie! The plot was intriguing and the acting was good! I would watch it again!",
+        "createdAt": "2024-03-08T04:30:00.000Z"
+      },
+      {
+        "name": "Matt Damon",
+        "userId": "da9347a6-2a7f-4573-be27-15f05569fb0d",
+        "rating": 3,
+        "comment": "Average movie! The plot was ok and the acting was average! I would not watch it again!",
+        "createdAt": "2024-03-12T11:30:00.000Z"
+      }
+    ]
+  }
+  ```
 
-   ```json
-   {
-     "data": [
-       {
-         "name": "Will Smith",
-         "userId": "999da33d-74c3-4176-bb26-98c53215a71c",
-         "rating": 5,
-         "comment": "Best movie ever! The plot was amazing and the acting was superb! I would watch it again and again!",
-         "createdAt": "2024-03-12T04:30:00.000Z"
-       },
-       {
-         "name": "John Smith",
-         "userId": "c784dd78-b26e-4cc0-9c8a-b84bdb4330b9",
-         "rating": 5,
-         "comment": "Fun to watch",
-         "createdAt": "Today"
-       },
-       {
-         "name": "Ben Affleck",
-         "userId": "fce17e94-3415-4c08-b2c9-beddba191b4d",
-         "rating": 4,
-         "comment": "Interesting movie! The plot was intriguing and the acting was good! I would watch it again!",
-         "createdAt": "2024-03-08T04:30:00.000Z"
-       },
-       {
-         "name": "Matt Damon",
-         "userId": "da9347a6-2a7f-4573-be27-15f05569fb0d",
-         "rating": 3,
-         "comment": "Average movie! The plot was ok and the acting was average! I would not watch it again!",
-         "createdAt": "2024-03-12T11:30:00.000Z"
-       }
-     ]
-   }
-   ```
+  ![alt text](assets/challenge09-c-2.png)
 
-   ![alt text](assets/challenge09-c-2.png)
+  - Sort feedbacks from the lowest rating to highest rating
+    **Request-**`GET /api/feedback/movie/sort/:movieId/rating/asc`
+    **Response for**`GET /api/feedback/movie/sort/ba1472e-563c-4dbd-ad31-d78aec32f5af/rating/asc`
 
-  4. Sort feedbacks from the lowest rating to highest rating
-   **Request-**`GET /api/feedback/movie/sort/:movieId/rating/asc`
-   **Response for**`GET /api/feedback/movie/sort/ba1472e-563c-4dbd-ad31-d78aec32f5af/rating/asc`
+  ```json
+  {
+    "data": [
+      {
+        "name": "Denzel Washington",
+        "userId": "4a90e4f3-d695-4c54-a698-099cdb39e4ad",
+        "rating": 1,
+        "comment": "Terrible movie! Did not like it at all! The plot was boring and the acting was terrible!",
+        "createdAt": "2024-03-07T04:30:00.000Z"
+      },
+      {
+        "name": "Tom Cruise",
+        "userId": "4fd09491-2299-4684-a4fb-d7ca0bb074eb",
+        "rating": 2,
+        "comment": "Terrible movie! Did not like it at all! The plot was boring and the acting was terrible! I would not watch it again!",
+        "createdAt": "2024-03-09T04:30:00.000Z"
+      },
+      {
+        "name": "Matt Damon",
+        "userId": "da9347a6-2a7f-4573-be27-15f05569fb0d",
+        "rating": 3,
+        "comment": "Average movie! The plot was ok and the acting was average! I would not watch it again!",
+        "createdAt": "2024-03-12T11:30:00.000Z"
+      },
+      {
+        "name": "Ben Affleck",
+        "userId": "fce17e94-3415-4c08-b2c9-beddba191b4d",
+        "rating": 4,
+        "comment": "Interesting movie! The plot was intriguing and the acting was good! I would watch it again!",
+        "createdAt": "2024-03-08T04:30:00.000Z"
+      }
+    ]
+  }
+  ```
 
-   ```json
-   {
-     "data": [
-       {
-         "name": "Denzel Washington",
-         "userId": "4a90e4f3-d695-4c54-a698-099cdb39e4ad",
-         "rating": 1,
-         "comment": "Terrible movie! Did not like it at all! The plot was boring and the acting was terrible!",
-         "createdAt": "2024-03-07T04:30:00.000Z"
-       },
-       {
-         "name": "Tom Cruise",
-         "userId": "4fd09491-2299-4684-a4fb-d7ca0bb074eb",
-         "rating": 2,
-         "comment": "Terrible movie! Did not like it at all! The plot was boring and the acting was terrible! I would not watch it again!",
-         "createdAt": "2024-03-09T04:30:00.000Z"
-       },
-       {
-         "name": "Matt Damon",
-         "userId": "da9347a6-2a7f-4573-be27-15f05569fb0d",
-         "rating": 3,
-         "comment": "Average movie! The plot was ok and the acting was average! I would not watch it again!",
-         "createdAt": "2024-03-12T11:30:00.000Z"
-       },
-       {
-         "name": "Ben Affleck",
-         "userId": "fce17e94-3415-4c08-b2c9-beddba191b4d",
-         "rating": 4,
-         "comment": "Interesting movie! The plot was intriguing and the acting was good! I would watch it again!",
-         "createdAt": "2024-03-08T04:30:00.000Z"
-       }
-     ]
-   }
-   ```
-
-   ![alt text](assets/challenge09-c-3.png)
+  ![alt text](assets/challenge09-c-3.png)
