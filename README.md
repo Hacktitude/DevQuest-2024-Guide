@@ -143,7 +143,7 @@ ADMIN
 * Username: `mattD@gmail.com`
 * Password: `Test@123`
 
-* USER
+USER
 * Username: `tomB@gmail.com`
 * Password: `Test@123`
 
