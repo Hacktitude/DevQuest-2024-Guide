@@ -1,4 +1,4 @@
-   # Challenge #
+# Challenge 10
 #### Provide discount for Least rented movies.
 
 ## Overview

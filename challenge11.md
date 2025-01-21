@@ -4,10 +4,9 @@
 
 The objective of this challenge is to develop a function that takes a movie ID as input and returns a list of movies that are similar to the input movie. The returned list should be sorted in descending order of similarity.
 
-**This challenge consists of two parts:**
+**This challenge consists of one part:**
 
-a. Get similar movies for a given movie using Jaccard similarity index
-b. Get similar movies for a given movie using Cosine similarity index
+- Get similar movies for a given movie using Jaccard similarity index
 
 ## Instructions
 

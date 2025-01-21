@@ -4,9 +4,9 @@
 
 In this application users can send gift vouchers to each other. The user can send a gift voucher to another user by entering the recipient's email address and the amount of the gift voucher. The recipient will receive the gift voucher in the gift voucher section of the application. The recipient can then claim the gift voucher. This challenge has 3 sub-challenges.
 
-a. Send a gift voucher
-b. Get gift vouchers for recipient
-c. Claim a gift voucher
+- Send a gift voucher
+- Get gift vouchers for recipient
+- Claim a gift voucher
 
 ### a. Send a gift voucher
 

@@ -16,9 +16,9 @@ Then he needs to select B's email and no of days that the rental is gifted. In t
 In both of these scenarios, gifted rental fee should be deducted from the sender and should be updated in the database.
 
 <p align="center">
-<img src="Assets/challenge15-a.png">
+<img src="assets/challenge15-a.png">
 </p>
 
 <p align="center">
-<img src="Assets/challenge15-b.png">
+<img src="assets/challenge15-b.png">
 </p>
