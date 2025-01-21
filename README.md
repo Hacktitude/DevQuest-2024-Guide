@@ -182,6 +182,8 @@ This step is not mandatory to work on the DevQuest challenges, but it may improv
 
 You can now try out the challenges.
 
+You can now try out the challenges.
+
 | [Challenge 01](./challenge01.md) | [Challenge 02](./challenge02.md) | [Challenge 03](./challenge03.md) | [Challenge 04](./challenge04.md) |
 |----------------------------------|----------------------------------|----------------------------------|----------------------------------|
 | [Challenge 05](./challenge05.md) | [Challenge 06](./challenge06.md) | [Challenge 07](./challenge07.md) | [Challenge 08](./challenge08.md) |
