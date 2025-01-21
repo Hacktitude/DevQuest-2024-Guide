@@ -135,7 +135,7 @@ The Movie Rental System is a web application that allows users to browse, rent, 
 - **Recommendations**: The system provides personalized movie recommendations based on user preferences and rental history.
 - **Admin Interface**: Admins can add, update, and delete movies, as well as view rental statistics and manage user accounts.
 - **Clustering**: The system uses k-means clustering to group users based on their rental patterns and provides insights into user behavior.
-- 
+
 
 You can use the following credentials to log in as an admin, and an already existing user in seed data. Navigate the application using the main menu.
 
@@ -186,17 +186,15 @@ You can now try out the challenges.
 |--------------------------------|--------------------------------|--------------------------------|--------------------------------|
 |                                |                                |                                |                                |
 
+You can now try out the challenges.
+
+| [Challenge 01](./challenge01.md) | [Challenge 02](./challenge02.md) | [Challenge 03](./challenge03.md) | [Challenge 04](./challenge04.md) |
+|----------------------------------|----------------------------------|----------------------------------|----------------------------------|
 | [Challenge 05](./challenge05.md) | [Challenge 06](./challenge06.md) | [Challenge 07](./challenge07.md) | [Challenge 08](./challenge08.md) |
-|--------------------------------|--------------------------------|--------------------------------|--------------------------------|
-|                                |                                |                                |                                |
-
+|----------------------------------|----------------------------------|----------------------------------|----------------------------------|
 | [Challenge 09](./challenge09.md) | [Challenge 10](./challenge10.md) | [Challenge 11](./challenge11.md) | [Challenge 12](./challenge12.md) |
-|--------------------------------|--------------------------------|--------------------------------|--------------------------------|
-|                                |                                |                                |                                |
-
+|----------------------------------|----------------------------------|----------------------------------|----------------------------------|
 | [Challenge 13](./challenge13.md) | [Challenge 14](./challenge14.md) | [Challenge 15](./challenge15.md) | [Challenge 16](./challenge16.md) |
-|--------------------------------|--------------------------------|--------------------------------|--------------------------------|
-|                                |                                |                                |                                |
 
 
 If your sanity test passes and you are able to run the application, now you can proceed to the challenges. All the DevQuest challenges are documented in their own file. Please visit the links below, read them carefully, and get started solving them.
