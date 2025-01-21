@@ -168,7 +168,7 @@ The goal is to enhance the security and user experience by showing a generic err
 }
 ```
 <p align="center">
-  <img src="./assets/challenge01-b-1.png" width="300px"
+  <img src="./assets/challenge01-b-1.png" width="300px">
 </p>
 
 ## c. Toggle password visibility
